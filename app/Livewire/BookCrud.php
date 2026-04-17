@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use Livewire\Component;
+use App\Models\Book;
 
 class BookCrud extends Component
 {
@@ -25,6 +26,7 @@ class BookCrud extends Component
     }
      public function store()
     {
+        
         Book::create([
             'title' => $this->title,
             'author' => $this->author,
